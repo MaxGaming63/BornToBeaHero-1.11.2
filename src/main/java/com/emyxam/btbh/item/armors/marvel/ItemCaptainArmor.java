@@ -17,10 +17,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Emyxam on 01/07/2017.
- */
-
 public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements ItemModelProvider {
 
     private String name;
@@ -83,14 +79,14 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
 
         @SubscribeEvent
         public void updatePlayerAbilityStatus(LivingEvent.LivingUpdateEvent event) {
-            if (event.getEntityLiving() instanceof EntityPlayer) {
+            if(event.getEntityLiving() instanceof EntityPlayer) {
                 EntityPlayer player = (EntityPlayer) event.getEntityLiving();
                 String key = playerKey(player);
 
                 Boolean hasSet = playerHasSet(player);
 
-                if (playersWithSet.contains(key)) {
-                    if (hasSet) {
+                if(playersWithSet.contains(key)) {
+                    if(hasSet) {
                         player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 10, 0));   //Strength
                         player.addPotionEffect(new PotionEffect(Potion.getPotionById(11), 10, 0));  //Resistance
                         player.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 10, 0));  //Speed
@@ -98,7 +94,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
                         player.capabilities.allowFlying = true;
                     } else {
                         player.stepHeight = 0.5F;
-                        if (!player.capabilities.isCreativeMode && !player.isSpectator()) {
+                        if(!player.capabilities.isCreativeMode && !player.isSpectator()) {
                             player.capabilities.allowFlying = false;
                             player.capabilities.isFlying = false;
                         }
