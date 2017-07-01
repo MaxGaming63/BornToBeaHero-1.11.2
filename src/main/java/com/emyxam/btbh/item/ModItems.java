@@ -36,10 +36,10 @@ public class   ModItems{
     public static ItemIronmanArmor man_chestplate;
     public static ItemIronmanArmor man_leggings;
     /*Hulk*/
-    public static ItemArmor hulk_helmet;
-    public static ItemArmor hulk_boots;
-    public static ItemArmor hulk_chestplate;
-    public static ItemArmor hulk_leggings;
+    public static ItemIronmanArmor hulk_helmet;
+    public static ItemIronmanArmor hulk_boots;
+    public static ItemIronmanArmor hulk_chestplate;
+    public static ItemIronmanArmor hulk_leggings;
     /*black*/
     public static ItemArmor black_helmet;
     public static ItemArmor black_boots;
@@ -77,10 +77,10 @@ public class   ModItems{
         man_chestplate = register(new ItemIronmanArmor(BornToBeaHero.manArmorMaterial, EntityEquipmentSlot.CHEST, "man_chestplate"));
         man_helmet = register(new ItemIronmanArmor(BornToBeaHero.manArmorMaterial, EntityEquipmentSlot.HEAD, "man_helmet"));
                       /*Hulk*/
-        hulk_leggings = register(new ItemArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.LEGS, "hulk_leggings"));
-        hulk_boots = register(new ItemArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.FEET, "hulk_boots"));
-        hulk_chestplate = register(new ItemArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.CHEST, "hulk_chestplate"));
-        hulk_helmet = register(new ItemArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.HEAD, "hulk_helmet"));
+        hulk_leggings = register(new ItemIronmanArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.LEGS, "hulk_leggings"));
+        hulk_boots = register(new ItemIronmanArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.FEET, "hulk_boots"));
+        hulk_chestplate = register(new ItemIronmanArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.CHEST, "hulk_chestplate"));
+        hulk_helmet = register(new ItemIronmanArmor(BornToBeaHero.hulkArmorMaterial, EntityEquipmentSlot.HEAD, "hulk_helmet"));
                       /*Black*/
         black_leggings = register(new ItemArmor(BornToBeaHero.blackArmorMaterial, EntityEquipmentSlot.LEGS, "black_leggings"));
         black_boots = register(new ItemArmor(BornToBeaHero.blackArmorMaterial, EntityEquipmentSlot.FEET, "black_boots"));
