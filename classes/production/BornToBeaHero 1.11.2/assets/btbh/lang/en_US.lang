@@ -1,0 +1,51 @@
+-------# Items #--------
+    ---# Ingot #---
+item.ingot_adamantium.name=Adamantium Ingot
+item.ingot_vibranium.name=Vibranium Ingot
+item.ingot_steel.name=Steel Ingot
+item.ingot_titanium.name=Titanium Ingot
+item.ingot_uru.name=Uru Ingot
+
+    ---# Stuff #---
+    --# Captain #--
+item.captain_boots.name=Captain Boots
+item.captain_chestplate.name=Captain Muscles
+item.captain_helmet.name=Captain Helmet
+item.captain_leggins.name=Captain Leggins
+item.captain_shield.name=Captain Shield
+    --# HawkEye #--
+item.eye_boots.name=HawkEye Boots
+item.eye_chestplate.name=HawkEye Muscles
+item.eye_helmet.name=HawkEye Helmet
+item.eye_leggins.name=HawkEye Leggins
+    --# IronMan #--
+item.man_boots.name=IronMan Boots
+item.man_chestplate.name=IronMan Muscles
+item.man_helmet.name=IronMan Helmet
+item.man_leggins.name=IronMan Leggins
+    --# Hulk #--
+item.hulk_boots.name=Hulk Boots
+item.hulk_chestplate.name=Hulk Muscles
+item.hulk_helmet.name=Hulk Helmet
+item.hulk_leggins.name=Hulk Leggins
+    --# BlackWidow #--
+item.black_boots.name=BlackWidow Boots
+item.black_chestplate.name=BlackWidow Muscles
+item.black_helmet.name=BlackWidow Helmet
+item.black_leggins.name=BlackWidow Leggins
+    --# Thor #--
+item.thor_boots.name=Thor Boots
+item.thor_chestplate.name=Thor Muscles
+item.thor_helmet.name=Thor Helmet
+item.thor_leggins.name=Thor Leggins
+item.thor_hammer.name=Mjolnir
+
+
+-------# Blocks #--------
+tile.ore_vibranium.name=Vibranium Ore
+tile.block_uru.name=Uru Block
+tile.ore_uru.name=Adamantium Ore
+
+
+-------#  Tabs  #--------
+itemGroup.btbh=Born To Be a Hero

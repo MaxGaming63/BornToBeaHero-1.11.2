@@ -1,0 +1,16 @@
+[
+{
+  "modid": "avengerstuff",
+  "name": "Avenger Stuff",
+  "description": "Born to be a hero",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MaxGaming63, Lorexe, zkiller20"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
