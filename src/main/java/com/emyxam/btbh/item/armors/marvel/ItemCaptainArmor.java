@@ -100,7 +100,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
                         }
                         playersWithSet.remove(key);
                     }
-                } else if (hasSet) {
+                }else if(hasSet) {
                     playersWithSet.add(key);
                 }
             }
