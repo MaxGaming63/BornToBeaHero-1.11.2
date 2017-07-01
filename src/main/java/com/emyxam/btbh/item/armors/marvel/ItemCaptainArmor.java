@@ -32,7 +32,6 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
 
     @Override
     public void registerItemModel(Item item) {
-
         BornToBeaHero.proxy.registerItemRenderer(this, 0, name);
     }
 
