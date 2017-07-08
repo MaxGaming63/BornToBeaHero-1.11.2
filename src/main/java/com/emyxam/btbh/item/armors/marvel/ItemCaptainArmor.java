@@ -32,6 +32,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
 
     @Override
     public void registerItemModel(Item item) {
+
         BornToBeaHero.proxy.registerItemRenderer(this, 0, name);
     }
 
@@ -61,7 +62,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
     public static class abilityHandler {
 
         public static List<String> playersWithSet = new ArrayList<String>();
-        private boolean hasSet;
+        private boolean hasset;
 
         public static String playerKey(EntityPlayer player) {
             return player.getGameProfile().getName() + ":" + player.world.isRemote;
@@ -77,32 +78,31 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
         }
 
         @SubscribeEvent
-        public void updatePlayerAbilityStatus(LivingEvent.LivingUpdateEvent event) {
-            if(event.getEntityLiving() instanceof EntityPlayer) {
-                EntityPlayer player = (EntityPlayer) event.getEntityLiving();
+        public void updatePlayerAbilityStatus(LivingEvent.LivingUpdateEvent event){
+            if(event.getEntityLiving() instanceof EntityPlayer){
+                EntityPlayer player = (EntityPlayer)event.getEntityLiving();
                 String key = playerKey(player);
 
                 Boolean hasSet = playerHasSet(player);
 
-                if(playersWithSet.contains(key)) {
-                    if(hasSet) {
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 10, 0));   //Strength
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(11), 10, 0));  //Resistance
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 10, 0));  //Speed
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(8), 10, 0));  //Jump Boost
+                if(playersWithSet.contains(key)){
+                    if(hasSet){
+                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(5),10, 0));   //Strengh
+                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(11),10, 0));  //Resistance
                         player.capabilities.allowFlying = true;
                     } else {
                         player.stepHeight = 0.5F;
-                        if(!player.capabilities.isCreativeMode && !player.isSpectator()) {
+                        if(!player.capabilities.isCreativeMode && !player.isSpectator()){
                             player.capabilities.allowFlying = false;
                             player.capabilities.isFlying = false;
                         }
                         playersWithSet.remove(key);
                     }
-                }else if(hasSet) {
+                }else if(hasSet){
                     playersWithSet.add(key);
                 }
             }
         }
-    }
+
+    } // End Ability class
 }

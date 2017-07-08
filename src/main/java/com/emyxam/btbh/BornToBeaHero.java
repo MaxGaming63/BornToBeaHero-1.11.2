@@ -27,7 +27,7 @@ public class BornToBeaHero {
 
     public static final HeroTab creativeTab = new HeroTab();
 
-    public static ItemCaptainArmor.ArmorMaterial avengerArmorMaterial = EnumHelper.addArmorMaterial("CAPTAIN", Info.modId + ":captain", 8, new int[]{2, 2, 2, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static ItemCaptainArmor.ArmorMaterial captainArmorMaterial = EnumHelper.addArmorMaterial("CAPTAIN", Info.modId + ":captain", 8, new int[]{2, 2, 2, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static ItemArmor.ArmorMaterial eyeArmorMaterial = EnumHelper.addArmorMaterial("EYE", Info.modId + ":eye", 8, new int[]{5, 5, 5, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static ItemArmor.ArmorMaterial thorArmorMaterial = EnumHelper.addArmorMaterial("THOR", Info.modId + ":thor", 16, new int[]{4, 4, 4, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static ItemIronmanArmor.ArmorMaterial hulkArmorMaterial = EnumHelper.addArmorMaterial("HULK", Info.modId + ":hulk", 40, new int[]{10, 10, 10, 10}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);

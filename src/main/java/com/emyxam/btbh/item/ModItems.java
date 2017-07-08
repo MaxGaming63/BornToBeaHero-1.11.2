@@ -61,10 +61,10 @@ public class   ModItems{
         ingotTitanium = register(new ItemOre("ingot_titanium", "ingot_titanium"));
         ingotUru = register(new ItemOre("ingot_uru","ingot_uru"));
                        /*Captain*/
-        captain_leggings = register(new ItemCaptainArmor(BornToBeaHero.avengerArmorMaterial, EntityEquipmentSlot.LEGS, "captain_leggings"));
-        captain_boots = register(new ItemCaptainArmor(BornToBeaHero.avengerArmorMaterial, EntityEquipmentSlot.FEET, "captain_boots"));
-        captain_chestplate = register(new ItemCaptainArmor(BornToBeaHero.avengerArmorMaterial, EntityEquipmentSlot.CHEST, "captain_chestplate"));
-        captain_helmet = register(new ItemCaptainArmor(BornToBeaHero.avengerArmorMaterial, EntityEquipmentSlot.HEAD, "captain_helmet"));
+        captain_leggings = register(new ItemCaptainArmor(BornToBeaHero.captainArmorMaterial, EntityEquipmentSlot.LEGS, "captain_leggings"));
+        captain_boots = register(new ItemCaptainArmor(BornToBeaHero.captainArmorMaterial, EntityEquipmentSlot.FEET, "captain_boots"));
+        captain_chestplate = register(new ItemCaptainArmor(BornToBeaHero.captainArmorMaterial, EntityEquipmentSlot.CHEST, "captain_chestplate"));
+        captain_helmet = register(new ItemCaptainArmor(BornToBeaHero.captainArmorMaterial, EntityEquipmentSlot.HEAD, "captain_helmet"));
         //captain_shield = register(new ItemShieldBase("captain_shield", 2048));
                         /*Eye*/
         eye_leggings = register(new ItemArmor(BornToBeaHero.eyeArmorMaterial, EntityEquipmentSlot.LEGS, "eye_leggings"));
