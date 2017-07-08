@@ -2,8 +2,7 @@ package com.emyxam.btbh.proxy;
 
 import com.emyxam.btbh.block.ModBlocks;
 import com.emyxam.btbh.item.ModItems;
-import com.emyxam.btbh.item.armors.marvel.ItemCaptainArmor;
-import com.emyxam.btbh.item.armors.marvel.ItemIronmanArmor;
+import com.emyxam.btbh.item.armors.marvel.*;
 import com.emyxam.btbh.recipe.ModRecipes;
 import com.emyxam.btbh.world.ModWorldGen;
 import net.minecraft.item.Item;
@@ -27,6 +26,9 @@ public abstract class CommonProxy {
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new ItemIronmanArmor.abilityHandler());
         MinecraftForge.EVENT_BUS.register(new ItemCaptainArmor.abilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemHulkArmor.abilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemEyeArmor.abilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemThorArmor.abilityHandler());
         ModRecipes.init();
     }
 

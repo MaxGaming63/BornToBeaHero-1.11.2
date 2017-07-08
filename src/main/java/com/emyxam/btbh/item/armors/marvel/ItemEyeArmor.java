@@ -17,11 +17,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements ItemModelProvider {
+public class ItemEyeArmor extends net.minecraft.item.ItemArmor implements ItemModelProvider {
 
     private String name;
 
-    public ItemCaptainArmor(ArmorMaterial material, EntityEquipmentSlot slot, String name) {
+    public ItemEyeArmor(ArmorMaterial material, EntityEquipmentSlot slot, String name) {
         super(material, 0, slot);
         setRegistryName(name);
         setUnlocalizedName(name);
@@ -49,7 +49,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
         ItemStack legs = entity.getItemStackFromSlot(EntityEquipmentSlot.LEGS);
         ItemStack feet = entity.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
-        if (head != null && head.getItem() instanceof ItemCaptainArmor && chest != null && chest.getItem() instanceof ItemCaptainArmor && legs != null && legs.getItem() instanceof ItemCaptainArmor && feet != null && feet.getItem() instanceof ItemCaptainArmor || entity.capabilities.isCreativeMode || entity.isSpectator()) {
+        if (head != null && head.getItem() instanceof ItemEyeArmor && chest != null && chest.getItem() instanceof ItemEyeArmor && legs != null && legs.getItem() instanceof ItemEyeArmor && feet != null && feet.getItem() instanceof ItemEyeArmor || entity.capabilities.isCreativeMode || entity.isSpectator()) {
             entity.fallDistance = 0.0F;
         }
     }
@@ -74,7 +74,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
             ItemStack legs = entity.getItemStackFromSlot(EntityEquipmentSlot.LEGS);
             ItemStack feet = entity.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
-            return head != null && head.getItem() instanceof ItemCaptainArmor && chest != null && chest.getItem() instanceof ItemCaptainArmor && legs != null && legs.getItem() instanceof ItemCaptainArmor && feet != null && feet.getItem() instanceof ItemCaptainArmor;
+            return head != null && head.getItem() instanceof ItemEyeArmor && chest != null && chest.getItem() instanceof ItemEyeArmor && legs != null && legs.getItem() instanceof ItemEyeArmor && feet != null && feet.getItem() instanceof ItemEyeArmor;
         }
 
         @SubscribeEvent
@@ -87,9 +87,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
 
                 if(playersWithSet.contains(key)){
                     if(hasSet){
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(5),10, 0));   //Strengh
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(1),10, 0)); //Speed
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(8),10, 0)); //Jump
+                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(16),10, 1));   //NightVision
                     } else {
                         player.stepHeight = 0.5F;
                         if(!player.capabilities.isCreativeMode && !player.isSpectator()){

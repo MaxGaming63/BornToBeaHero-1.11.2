@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 
 import java.util.List;
 
-public class ItemSword extends net.minecraft.item.ItemSword{
+public class ItemThorSword extends net.minecraft.item.ItemSword{
 
     private String name;
 
-    public ItemSword(ToolMaterial material, String name){
+    public ItemThorSword(ToolMaterial material, String name){
 
         super(material);
         this.name = name;
