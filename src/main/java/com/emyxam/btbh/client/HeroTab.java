@@ -11,11 +11,13 @@ public class HeroTab extends CreativeTabs {
 
     public HeroTab() {
         super(Info.modId);
+        setBackgroundImageName("tab_btbh.png");
     }
 
     @Override
     public ItemStack getTabIconItem() {
         return new ItemStack(ModItems.ingotVibranium);
+
     }
 
     @Override
