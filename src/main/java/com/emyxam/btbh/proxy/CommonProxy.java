@@ -24,11 +24,11 @@ public abstract class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(new ItemIronmanArmor.abilityHandler());
-        MinecraftForge.EVENT_BUS.register(new ItemCaptainArmor.abilityHandler());
-        MinecraftForge.EVENT_BUS.register(new ItemHulkArmor.abilityHandler());
-        MinecraftForge.EVENT_BUS.register(new ItemEyeArmor.abilityHandler());
-        MinecraftForge.EVENT_BUS.register(new ItemThorArmor.abilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemIronmanArmor.AbilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemCaptainArmor.AbilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemHulkArmor.AbilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemEyeArmor.AbilityHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemThorArmor.AbilityHandler());
         ModRecipes.init();
     }
 
