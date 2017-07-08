@@ -59,7 +59,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
         return 0;
     }
 
-    public static class abilityHandler {
+    public static class AbilityHandler {
 
         public static List<String> playersWithSet = new ArrayList<String>();
         private boolean hasset;
