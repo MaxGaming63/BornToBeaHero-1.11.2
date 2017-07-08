@@ -87,7 +87,7 @@ public class ItemCaptainArmor extends net.minecraft.item.ItemArmor implements It
 
                 if(playersWithSet.contains(key)){
                     if(hasSet){
-                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(5),10, 0));   //Strengh
+                        player.addPotionEffect(new PotionEffect(Potion.getPotionById(5),10, 0));   //Strength
                         player.addPotionEffect(new PotionEffect(Potion.getPotionById(1),10, 0)); //Speed
                         player.addPotionEffect(new PotionEffect(Potion.getPotionById(8),10, 0)); //Jump
                     } else {
